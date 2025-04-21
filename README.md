@@ -44,7 +44,7 @@ This Streamlit application allows you to:
    ```bash
    pip install -r requirements.txt
    ```
-4. **Set your OpenAI API key** (if using GPT‑4 summarization)
+4. **Set your OpenAI API key** (The used model for summarization is `gpt-4o-mini`)
    - Environment variable
      ```bash
      echo "OPENAI_API_KEY=your_api_key_here" > .env
