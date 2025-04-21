@@ -1,5 +1,11 @@
 # Ticket Data Summary & Visualization App
 
+
+## 🎥 Demo Video
+
+![demo-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/b868750a-ec82-4fa2-b126-93aaed45333e)
+
+
 ## 🌟 Overview
 This Streamlit application allows you to:
 
@@ -83,7 +89,7 @@ ticket_analysis_app/
    - Time series of tickets over time
    - Bar chart of ticket counts by product
    - Pie chart of processing status
-   Download charts directly via provided buttons.
+   Download charts directly via the provided buttons.
 6. **Generate AI Summaries** by clicking **Generate Summaries**. Wait for the analysis to finish.
 7. **Read** each product’s narrative in expandable sections.
 8. **Export** the combined summary report as a Markdown file.
