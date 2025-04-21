@@ -1,0 +1,18 @@
+# web framework for our app UI
+streamlit-1.44
+
+# data processing and visualization:
+# data manipulation
+pandas
+# Excel export
+openpyxl-3.1.5
+# for charts
+matplotlib-3.10.1
+plotly-6.0.1
+kaleido-0.2.1
+
+# LLM Provider
+openai-1.75.0
+
+# environment variables
+python-dotenv-1.1.0
