@@ -13,7 +13,11 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def build_event_list(df, date_col='ACCEPTANCE_TIME', id_col='ORDER_NUMBER', desc_cols=None):
     """
-    Construct a chronological list of ticket events for LLM input.
+    Construct a chronological list of ticket events to give the LLM context to generate the sammary.
+    The list contains :
+    - ticket id
+    - date
+    - description (ORDER_DESCRIPTION_1, ORDER_DESCRIPTION_2, ORDER_DESCRIPTION_3_MAXIMUM, NOTE_MAXIMUM, COMPLETION_RESULT_KB, COMPLETION_NOTE_MAXIMUM)
 
     Parameters:
         df: pd.DataFrame for a single product group, sorted by date

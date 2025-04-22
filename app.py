@@ -69,7 +69,8 @@ if uploaded_file is not None:
     if st.button("Generate Summaries", type="primary"):
         with st.spinner("Generating summaries (this may take a moment 😅)..."):
             # Call the summarize_all_products function directly
-            summaries = summarize_all_products(df, desc_cols=['ORDER_DESCRIPTION_1', 'ORDER_DESCRIPTION_2', 'NOTE_MAXIMUM'])
+            # columns to include in the summary -> ORDER_DESCRIPTION_1, ORDER_DESCRIPTION_2, ORDER_DESCRIPTION_3_MAXIMUM, NOTE_MAXIMUM, COMPLETION_RESULT_KB, COMPLETION_NOTE_MAXIMUM
+            summaries = summarize_all_products(df, desc_cols=['ORDER_DESCRIPTION_1', 'ORDER_DESCRIPTION_2', 'ORDER_DESCRIPTION_3_MAXIMUM', 'NOTE_MAXIMUM', 'COMPLETION_RESULT_KB', 'COMPLETION_NOTE_MAXIMUM'])
             
         # Display summaries
         for product, text in summaries.items():
